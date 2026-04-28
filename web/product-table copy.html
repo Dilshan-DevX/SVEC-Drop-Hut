@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- bootstrap-table.html  Tue, 07 Jan 2020 03:36:27 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+<title>Bootstrap Components &rsaquo; Table &mdash; CodiePie</title>
+
+<!-- General CSS Files -->
+<link rel="stylesheet" href="assets2/modules/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets2/modules/fontawesome/css/all.min.css">
+
+<!-- CSS Libraries -->
+
+<!-- Template CSS -->
+<link rel="stylesheet" href="assets2/css/style.min.css">
+<link rel="stylesheet" href="assets2/css/components.min.css">
+</head>
+
+<body class="layout-4" onload="loadProductDashboard();">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<div id="app">
+<div class="main-wrapper main-wrapper-1">
+    <div class="navbar-bg"></div>
+
+    <!-- Start app top navbar -->
+   
+
+    <!-- Start main left sidebar menu -->
+    <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+            <div class="sidebar-brand">
+                <a href="product-table copy.html">DropHut</a>
+            </div>
+            <div class="sidebar-brand sidebar-brand-sm">
+                <a href="index-2.html">CP</a>
+            </div>
+            <ul class="sidebar-menu">
+
+                <li class="menu-header">Dashboard</li>
+
+                <li class="dropdown">
+                    <a href="" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-link" href="#">Analytics</a></li>
+                        
+                    </ul> 
+                </li>
+
+                <li class="menu-header">User Side</li>
+
+                <li class="dropdown">
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Management</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-link" href="bootstrap-table.html">User Management</a></li>
+                        
+                        <li><a class="nav-link" href="product-table copy.html">Product Management</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>Reporting</span></a></li>
+
+                <li class="dropdown active">
+                    <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Product</span></a>
+                    <ul class="dropdown-menu">
+
+                        <li><a class="nav-link" href="">Adding</a></li>
+                        <li><a class="nav-link" href="">Listing</a></li>
+                 
+                    </ul>
+                </li>
+
+                
+                
+            </ul>
+<!--            <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                <a href="" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Documentation</a>
+            </div>-->
+        </aside>
+    </div>
+
+    <!-- Start app main Content -->
+    <div class="main-content">
+        <section class="section">
+
+            <div class="section-header">
+                <h1>Product Management</h1>
+                <!-- <div class="section-header-breadcrumb">
+                    <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                    <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
+                    <div class="breadcrumb-item">Table</div>
+                </div> -->
+            </div>
+
+            <div class="section-body">
+                <h2 class="section-title">Tables</h2>
+                <p class="section-lead">Displays product details (name, category, price, stock) in an organized, sortable table for easy management.</p>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+
+
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Product</h4>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Product name</th>
+                                        <th scope="col">color</th>
+                                        <th scope="col">Qty</th>
+                                        <th scope="col">Add date</th>
+                                        <th scope="col">Remove</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="userContainer">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td><button class="btn btn-danger">Remove </button></td>
+                                
+                                    </tr>
+                                   
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="card">
+                            <div class="card-header">
+                                <h4>FIt</h4>
+                            </div>
+                            <div class="card-body p-0">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> -->
+                        
+                        
+                        
+                   
+
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Start app Footer part -->
+    <footer class="main-footer">
+        <div class="footer-left">
+            
+        </div>
+        <div class="footer-right">
+        
+        </div>
+    </footer>
+</div>
+</div>
+
+<!-- General JS Scripts -->
+<script src="assets2/bundles/lib.vendor.bundle.js"></script>
+<script src="js/CodiePie.js"></script>
+
+<!-- JS Libraies -->
+
+<!-- Page Specific JS File -->
+
+<!-- Template JS File -->
+<script src="js/scripts.js"></script>
+<script src="js/custom.js"></script>
+<script src="assets/js/loadUserTable.js"></script>
+<script src="assets/js/productDelete.js"></script>
+</body>
+
+<!-- bootstrap-table.html  Tue, 07 Jan 2020 03:36:27 GMT -->
+</html>
